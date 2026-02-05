@@ -6,4 +6,5 @@ RUN wget https://github.com/Assnsster/dockertes/releases/download/1/casioutils.z
 RUN cp /usr/bin/python3 /usr/bin/python
 RUN unzip -o casioutils.zip
 WORKDIR /app/web
-CMD ["python3", "run.py"]
+EXPOSE 7860
+CMD ["python3", "run.py", "7860"]
